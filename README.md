@@ -10,4 +10,4 @@
 <li>Lodash</li>
 <li>CSS</li>
 </ul>
-<p>Project live link <a href="#/" target="_blank" rel="noopener noreferrer">To Do App Project</a></p>
+<p>Project live link <a href="https://olawhite-todo-app.onrender.com" target="_blank" rel="noopener noreferrer">To Do App Project</a></p>
