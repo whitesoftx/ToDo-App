@@ -14,7 +14,9 @@ app.use(express.static("public"));
 
 mongoose.set('strictQuery', false);
 // mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true });
-mongoose.connect("mongodb+srv://whitesoftx:Xchange75us@cluster0.zog3eqp.mongodb.net/todolistDB", { useNewUrlParser: true });
+//Connect to the Atlas MongoDB
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.zog3eqp.mongodb.net/todolistDB`;
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // Create Schema
 const itemsSchema = {
